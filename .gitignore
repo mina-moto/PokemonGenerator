@@ -2,8 +2,9 @@
 .DS_Store
 
 ### Data ###
-/data
-/out
+/data/*
+!/data/pokemon_image/sample.png
+/out/*
 
 ### Library ###
 DCGAN-tensorflow/
