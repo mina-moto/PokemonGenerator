@@ -26,10 +26,14 @@ Download docker image
 docker image
 
 ## Usage
+train
+```
+docker
+```
 
 train
 ```
-docker run -v $PWD:/PokemonGenerator -w /PokemonGenerator -it --rm minamotofordocker/pokemon_generator:latest python DCGAN-tensorflow/main.py --data_dir data/ --dataset pokemon_image --out_dir out/ --out_name pokemon_gan_sample --input_fname_pattern=*.png --input_height 120 --output_height 120 --train --epoch=5000 --batch_size=64 --learning_rate=0.001 --G_img_sum
+docker run -v $PWD:/PokemonGenerator -w /PokemonGenerator -it --rm minamotofordocker/pokemon_generator:latest python DCGAN-tensorflow-pokemon/main.py --data_dir data/ --dataset pokemon_image --out_dir out/ --out_name pokemon_gan_sample --input_fname_pattern=*.png --input_height 120 --output_height 120 --train --epoch=5000 --batch_size=64 --learning_rate=0.001 --G_img_sum
 ```
 
 test
@@ -40,5 +44,5 @@ docker run -v $PWD:/PokemonGenerator -it --rm minamotofordocker/pokemon_generato
 ### Gpu use
 train
 ```
-docker run --runtime=nvidia -v $PWD:/PokemonGenerator -w /PokemonGenerator -it --rm minamotofordocker/pokemon_generator:latest python DCGAN-tensorflow/main.py --data_dir data/ --dataset pokemon_image --out_dir out/ --out_name pokemon_gan_sample --input_fname_pattern=*.png --input_height 120 --output_height 120 --train --epoch=5000 --batch_size=64 --learning_rate=0.001 --G_img_sum
+docker run --runtime=nvidia -v $PWD:/PokemonGenerator -w /PokemonGenerator -it --rm minamotofordocker/pokemon_generator:latest python DCGAN-tensorflow-pokemon/main.py --data_dir data/ --dataset pokemon_image --out_dir out/ --out_name pokemon_gan_sample --input_fname_pattern=*.png --input_height 120 --output_height 120 --train --epoch=5000 --batch_size=64 --learning_rate=0.001 --G_img_sum
 ```
