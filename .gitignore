@@ -3,6 +3,8 @@
 
 ### Data ###
 /data/*
+!/data/pokemon_image/
+/data/pokemon_image/*
 !/data/pokemon_image/sample.png
 /out/*
 
