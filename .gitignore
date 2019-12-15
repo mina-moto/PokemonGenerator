@@ -2,8 +2,8 @@
 .DS_Store
 
 ### Data ###
-data/
-out/
+/data/*
+/out/*
 
 ### Library ###
 DCGAN-tensorflow/
