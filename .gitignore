@@ -9,7 +9,7 @@
 /out/*
 
 ### Library ###
-DCGAN-tensorflow/
+DCGAN-tensorflow-pokemon/
 pokemon-images-dataset-by-type/
 
 # Created by https://www.gitignore.io/api/python
