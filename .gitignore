@@ -3,6 +3,7 @@
 
 ### Data ###
 data/
+out/
 
 ### Library ###
 DCGAN-tensorflow/
