@@ -1,0 +1,12 @@
+version: '3'
+services:
+  tyler_durden:
+    image: 'minamotofordocker/pokemon_generator'
+    container_name: 'pokemon_generator'
+    volumes:
+      - $PWD:/PokemonGenerator
+    stdin_open: true
+    tty: true
+    working_dir: /PokemonGenerator
+    # python DCGAN-tensorflow/main.py
+    command: python -V

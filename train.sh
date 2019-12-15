@@ -1,0 +1,1 @@
+python DCGAN-tensorflow/main.py --data_dir data/ --dataset pokemon_image --out_dir out/ --out_name pokemon_gan --input_fname_pattern=*.png --input_height 120 --output_height 120 --train --epoch=5000 --batch_size=64 --G_img_sum
